@@ -1,11 +1,11 @@
 
 $(function() {
     $('.prompt').html('root@aymane-lotfi:~# ');
-	
+
 
   var term = new Terminal('#input-line .cmdline', '#container output');
   term.init();
-  
+
 });
 
 var util = util || {};
@@ -21,9 +21,9 @@ var Terminal = Terminal || function(cmdLineContainer, outputContainer) {
   var output_ = document.querySelector(outputContainer);
 
   const CMDS_ = [
-    'whoami', 'education', 'dreams', 'programming', 'interests', 'contact',  'clear', 'help', 'picture'
+    'whoami', 'education', 'dreams', 'programming', 'interests', 'contact',  'clear', 'help', 'picture' 
   ];
-  
+
   var fs_ = null;
   var cwd_ = null;
   var history_ = [];
@@ -124,7 +124,7 @@ var Terminal = Terminal || function(cmdLineContainer, outputContainer) {
           var result = "<h3>Competitive Programmer</h3><p>1th Place in the LegalHack Hackathon  2018 with my team \"LADCHAIN\"<br>Laureate of the Hack&Pitch hackathon by building an app which help people to drop smoking based on the blockchain<br><br>buid an Operating System based on Android<br>Build more than 25 android and iOs<br>More projects on my <a href=\"https://github.com/aymane-lotfi\">Github</a></p>";
           output(result);
           break;
-        case 'interests': 
+        case 'interests':
           var result = "<h3>Interests</h3><p>Algorithms, Data Structures, Problem Solving, Maths , Football, Literature, Communication,  Internet of Things , Machine Learning , Cloud Computing , Geometry , Big Data , Open Source Technologies...</p>";
           output(result);
           break;
@@ -141,7 +141,7 @@ var Terminal = Terminal || function(cmdLineContainer, outputContainer) {
          output(result);
           break;
 		  case 'picture':
-          var result = "<img src=aymane.jpg> </img>"
+          var result = "<img src=aymane.jpg> </img>";
          output(result);
           break;
             default:
@@ -197,5 +197,5 @@ var Terminal = Terminal || function(cmdLineContainer, outputContainer) {
 
     output: output
   }
-  
+
 };
