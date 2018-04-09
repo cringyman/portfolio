@@ -21,7 +21,7 @@ var Terminal = Terminal || function(cmdLineContainer, outputContainer) {
   var output_ = document.querySelector(outputContainer);
 
   const CMDS_ = [
-    'whoami', 'education', 'dreams', 'programming', 'interests', 'contact',  'clear', 'help', 'picture' 
+    'whoami', 'education', 'dreams', 'programming', 'interests', 'contact',  'clear', 'help', 'picture','stop' 
   ];
 
   var fs_ = null;
@@ -144,6 +144,11 @@ var Terminal = Terminal || function(cmdLineContainer, outputContainer) {
           var result = "<img src=aymane.jpg> </img>";
          output(result);
           break;
+        case 'stop':
+          audio_.innerHTML = '';
+          this.value = '';
+       return;
+       break;
             default:
           if (cmd) {
             output(cmd + ': command not found');
