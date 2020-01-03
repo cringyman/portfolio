@@ -197,7 +197,7 @@ var Terminal = Terminal || function(cmdLineContainer, outputContainer) {
   //
   return {
     init: function() {
-      output('<h1>Aymane Lotfi</h1><h3>Programmer and dreams Researcher<br>I am living in Morocco</a></h3><p>Enter "help" for more information.</p><p> -- This website is built with love <3</p><p>The music is made by my robot - to stop it - Type --stop </p>');
+      output('<h1>Aymane Lotfi</h1><h3>Programmer and dreams Researcher<br>I am living in Morocco</a></h3>');
 	     
     },
 
