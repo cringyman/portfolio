@@ -121,7 +121,7 @@ var Terminal = Terminal || function(cmdLineContainer, outputContainer) {
           output(result);
           break;
         case 'programming':
-          var result = "<h3>Competitive Programmer</h3><p>1th Place in the LegalHack Hackathon  2018 with my team \"LADCHAIN\"<br>Laureate of the Hack&Pitch hackathon by building an app which help people to drop smoking based on the blockchain<br><br>buid an Operating System based on Android<br>Build more than 25 android and iOs<br>More projects on my <a href=\"https://github.com/aymane-lotfi\">Github</a></p>";
+          var result = "<h3>Competitive Programmer, taking part in IOI2019</h3><p>1th Place in the LegalHack Hackathon  2018 with my team \"LADCHAIN\"<br>Laureate of the Hack&Pitch hackathon by building an app which help people to drop smoking based on the blockchain<br><br>buid an Operating System based on Android<br>Build more than 25 android and iOs<br>More projects on my <a href=\"https://github.com/aymane-lotfi\">Github</a></p>";
           output(result);
           break;
         case 'interests':
@@ -141,7 +141,7 @@ var Terminal = Terminal || function(cmdLineContainer, outputContainer) {
          output(result);
           break;
 		  case 'picture':
-          var result = "<img src=aymane.jpg> </img>";
+          var result = "<h3>Shit. here we go again</h3>";
          output(result);
           break;
         case 'stop':
